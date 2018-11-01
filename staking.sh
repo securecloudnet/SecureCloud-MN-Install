@@ -51,6 +51,10 @@ echo "daemon=1" >> securecloud.conf
 echo "logtimestamps=1" >> securecloud.conf
 echo "maxconnections=256" >> securecloud.conf
 echo "port=9191" >> securecloud.conf
+echo "addnode=149.28.238.247" >> securecloud.conf
+echo "addnode=45.77.59.64" >> securecloud.conf
+echo "addnode=45.63.119.225" >> securecloud.conf
+echo "addnode=45.76.131.16" >> securecloud.conf
 mv securecloud.conf .securecloud
 
   
