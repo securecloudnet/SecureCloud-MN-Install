@@ -6,7 +6,7 @@ The VPS you plan to install your masternode on needs to have at least 1GB of RAM
 
 ## Funding your Masternode
 
-* First, we will do the initial collateral TX and send exactly 2500 SecureCloud to one of our addresses. To keep things sorted in case we setup more masternodes we will label the addresses we use.
+* First, we will do the initial collateral TX and send exactly 1200 SecureCloud to one of our addresses. To keep things sorted in case we setup more masternodes we will label the addresses we use.
 
   - Open your SecureCloud wallet and switch to the "Receive" tab.
 
@@ -16,7 +16,7 @@ The VPS you plan to install your masternode on needs to have at least 1GB of RAM
 
   - The generated address will now be labelled as MN1 If you want to setup more masternodes just repeat the steps so you end up with several addresses for the total number of nodes you wish to setup. Example: For 10 nodes you will need 10 addresses, label them all.
 
-  - Once all addresses are created send 2500 SecureCloud each to them. Ensure that you send exactly 2500 SecureCloud and do it in a single transaction. You can double check where the coins are coming from by checking it via coin control usually, that's not an issue.
+  - Once all addresses are created send 1200 SecureCloud each to them. Ensure that you send exactly 1200 SecureCloud and do it in a single transaction. You can double check where the coins are coming from by checking it via coin control usually, that's not an issue.
 
 * As soon as all 1.2K transactions are done, we will wait for 15 confirmations. You can check this in your wallet or use the explorer. It should take around 30 minutes if all transaction have 15 confirmations
 
