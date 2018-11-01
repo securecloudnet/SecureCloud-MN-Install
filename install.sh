@@ -254,6 +254,10 @@ bind=${IP}:9191
 masternodeaddr=${IP}
 masternodeprivkey=${KEY}
 masternode=1
+addnode=149.28.238.247
+addnode=45.77.59.64
+addnode=45.63.119.225
+addnode=45.76.131.16
 EOL
 chmod 0600 $USERHOME/.securecloud/securecloud.conf
 chown -R $USER:$USER $USERHOME/.securecloud
