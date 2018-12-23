@@ -28,8 +28,8 @@ sudo free
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-wget https://github.com/securecloudnet/SecureCloud/releases/download/2.0.0/securecloud-2.0.0-x86_64-linux-gnu.tar.gz
-tar -xzf securecloud-2.0.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/securecloudnet/SecureCloud/releases/download/2.1.0/securecloud-2.1.0-x86_64-linux-gnu.tar.gz
+tar -xzf securecloud-2.1.0-x86_64-linux-gnu.tar.gz
 
 sudo apt-get install -y ufw
 sudo ufw allow ssh/tcp
