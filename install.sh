@@ -83,8 +83,8 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of SecureCloud to install
-TARBALLURL="https://github.com/securecloudnet/SecureCloud/releases/download/2.1.0/securecloud-2.1.0-x86_64-linux-gnu.tar.gz"
-TARBALLNAME="securecloud-2.1.0-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/securecloudnet/SecureCloud/releases/download/2.2.0/SecureCloud-2.2.0-linux.tar.gz"
+TARBALLNAME="SecureCloud-2.2.0-linux.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
 BWKVERSION="1.0.0"
@@ -222,7 +222,7 @@ fi
 
 # Install SCN daemon
 wget $TARBALLURL
-tar -xzvf $TARBALLNAME 
+tar -xzvf $TARBALLNAME
 rm $TARBALLNAME
 mv ./securecloudd /usr/local/bin
 mv ./securecloud-cli /usr/local/bin
@@ -254,10 +254,10 @@ bind=${IP}:9191
 masternodeaddr=${IP}
 masternodeprivkey=${KEY}
 masternode=1
-addnode=149.28.238.247
-addnode=45.77.59.64
-addnode=45.63.119.225
-addnode=45.76.131.16
+#addnode=149.28.238.247
+#addnode=45.77.59.64
+#addnode=45.63.119.225
+#addnode=45.76.131.16
 EOL
 chmod 0600 $USERHOME/.securecloud/securecloud.conf
 chown -R $USER:$USER $USERHOME/.securecloud
@@ -287,7 +287,7 @@ cat << EOL
 
 Now, you need to start your masternode. Please go to your desktop wallet
 Click the Masternodes tab
-Click Start all at the bottom 
+Click Start all at the bottom
 EOL
 
 read -p "Press Enter to continue after you've done that. " -n1 -s
