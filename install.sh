@@ -293,5 +293,5 @@ EOL
 read -p "Press Enter to continue after you've done that. " -n1 -s
 
 clear
-
+rm -rf /root/install.sh
 echo "" && echo "Masternode setup completed." && echo ""
