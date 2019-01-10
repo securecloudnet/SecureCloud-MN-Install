@@ -169,7 +169,7 @@ fi
 USERHOME=`eval echo "~$USER"`
 
 if [ -z "$ARGUMENTIP" ]; then
-read -e -p "Server IP Address: " -i $EXTERNALIP
+read -e -p "Server IP Address: " -i $EXTERNALIP -e IP
 fi
 
 if [ -z "$KEY" ]; then
