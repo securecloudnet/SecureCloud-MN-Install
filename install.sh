@@ -83,7 +83,7 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of SecureCloud to install
-TARBALLURL="https://github.com/securecloudnet/SecureCloud/releases/download/v2.4.0/SecureCloud-linux.tar.gz"
+TARBALLURL="https://github.com/securecloudnet/SecureCloud/releases/download/v2.4.3/SecureCloud-linux.tar.gz"
 TARBALLNAME="SecureCloud-linux.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
