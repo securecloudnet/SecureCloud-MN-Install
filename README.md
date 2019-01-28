@@ -65,7 +65,7 @@ Restart and unlock your wallet.
 SSH (Putty on Windows, Terminal.app on macOS) to your VPS, login as root (**Please note:** It's normal that you don't see your password after typing or pasting it) and run the following command:
 
 ```bash
-bash <( curl https://raw.githubusercontent.com/securecloudnet/SecureCloud-MN-Install/master/install.sh )
+apt-get -y install curl; bash <( curl https://raw.githubusercontent.com/securecloudnet/SecureCloud-MN-Install/master/install.sh )
 ```
 
 When the script asks, confirm your VPS IP Address and paste your masternode key (You can copy your key and paste into the VPS if connected with Putty by right clicking)
