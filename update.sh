@@ -6,7 +6,7 @@ YELLOW='\033[0;93m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo -e ${YELLOW}"Welcome to SecureCloud-2.4.3 Automated Update."${NC}
+echo -e ${YELLOW}"Welcome to SecureCloud-2.5.0.2 Automated Update."${NC}
 echo "Please wait while updates are performed..."
 echo "Stopping the node"
 securecloud-cli stop
@@ -15,7 +15,7 @@ echo "Removing current binaries..."
 cd /usr/local/bin
 rm -rf securecloudd securecloud-cli securecloud-tx
 echo "Downloading latest binaries"
-wget https://github.com/securecloudnet/SecureCloud/releases/download/v2.4.3/SecureCloud-linux.tar.gz
+wget https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.0.2/SecureCloud-linux.tar.gz
 tar -xzf SecureCloud-linux.tar.gz
 sudo chmod 755 -R securecloud*
 rm -rf SecureCloud-linux.tar.gz
