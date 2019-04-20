@@ -28,7 +28,7 @@ sudo free
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-wget https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.0.2/SecureCloud-linux.tar.gz
+wget https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.1/SecureCloud-linux.tar.gz
 tar -xzf SecureCloud-linux.tar.gz
 
 sudo apt-get install -y ufw
