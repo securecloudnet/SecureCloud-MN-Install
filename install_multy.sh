@@ -18,7 +18,7 @@ node4="45.76.131.16"
 
 # Set these to change the version of SecureCloud to install
 TARBALLNAME="SecureCloud-linux.tar.gz"
-TARBALLURL="https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.1/"$TARBALLNAME
+TARBALLURL="https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.1.1/"$TARBALLNAME
 
 USERHOME=`eval echo "~$USER"`
 
@@ -27,8 +27,8 @@ pidfile=$namemoney".pid"
 client=$namemoney"-cli"
 server=$namemoney"d"
 
-BOOTSTRAPURL="https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.1/bootstrap-20190420.zip"
-BOOTSTRAPARCHIVE="bootstrap-20190420.zip"
+BOOTSTRAPURL="https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.1/bootstrap-20190503.zip"
+BOOTSTRAPARCHIVE="bootstrap-20190503.zip"
 BWKVERSION="1.0.0"
 cant=1
 
