@@ -15,14 +15,14 @@ echo "Removing current binaries..."
 cd /usr/local/bin
 rm -rf securecloudd securecloud-cli securecloud-tx
 echo "Downloading latest binaries"
-wget https://github.com/securecloudnet/SecureCloud/releases/download/v2.5.1.1/SecureCloud-linux.tar.gz
+wget $(curl -s https://api.github.com/repos/securecloudnet/SecureCloud/releases/latest | grep "browser_download_url.*\.tar\.gz"| cut -d '"' -f 4)
 tar -xzf SecureCloud-linux.tar.gz
 sudo chmod 755 -R securecloud*
 rm -rf SecureCloud-linux.tar.gz
 cd ~
 echo "Startin/Syncing the node, please wait...";
 securecloudd -daemon
-until securecloud-cli mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
+until securecloud-cli mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 5 ; done > /dev/null 2>&1
 echo -e ${GREEN}"Your node is fully synced. Your masternode is running!"${NC}
 rm -rf /root/update.sh
 echo -e ${GREEN}"The END. You can close now the SSH terminal session"${NC};
